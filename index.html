@@ -6,40 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    
     <title>Inicio</title>
+
 </head>
 <body>
-    <header>
-        <img src="/Images/background.png" alt="Wolf logo">
-    </header>
-    <nav>
-        <ul>
-            <li id="menus"><a id="menus" href="index.html">HOME</a></li>
-            <li id="menus"><a id="menus" href="../pages/tienda.html">TIENDA</a></li>
-            <li id="menus"><a id="menus" href="../pages/quienes_somos.html">QUIENES SOMOS</a></li>
-            <li id="menus"><a id="menus" href="../pages/contacto.html">CONTACTO</a></li>
-        </ul>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Wolf Informatica</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+              <a class="nav-link" href="/pages/quienes_somos.html">Quienes somos</a>
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+
+              <a class="nav-link disabled">Ingresar</a>
+              <a class="nav-link disabled">Registrarse</a>
+
+            </div>
+          </div>
+        </div>
     </nav>
-    <main id="grilla_index">
-        <div id="index_services" class="animate__animated animate__bounceIn">
-            <h2 id="titulo">SERVICIOS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti veniam molestias eius a voluptas architecto totam, quis, voluptatum, eaque voluptate sed nostrum officiis autem. Quos ipsa ducimus ad placeat.</p>
-            <button>Ver mas</button>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/background.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/background.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div id="index_services" class="animate__animated animate__zoomIn">
-            <h2 id="titulo">MANTENIMIENTO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti veniam molestias eius a voluptas architecto totam, quis, voluptatum, eaque voluptate sed nostrum officiis autem. Quos ipsa ducimus ad placeat.</p>
-            <button>Ver mas</button>
-        </div>
-        <div id="index_services" class="animate__animated animate__zoomIn">
-            <h2 id="titulo">GARANTIAS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti veniam molestias eius a voluptas architecto totam, quis, voluptatum, eaque voluptate sed nostrum officiis autem. Quos ipsa ducimus ad placeat.</p>
-            <button>Ver mas</button>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <main>
+
+            <div class="container px-4 py-5" id="hanging-icons">
+              <h2 class="pb-2 border-bottom">Servicios</h2>
+              <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square bg-light text-dark flex-shrink-0 me-3"></div>
+                  <div>
+                    <h2>Mantenimiento</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro hic ea earum voluptatibus animi, cum maxime eligendi dicta placeat perspiciatis, maiores id illo doloremque. Possimus magni harum labore obcaecati voluptatibus.</p>
+                    <a href="#" class="btn btn-primary">
+                      Ver mas...
+                    </a>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  </div>
+                  <div>
+                    <h2>Reparación</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, unde? Saepe voluptates quaerat delectus dignissimos totam. Aliquid nesciunt laboriosam, quod soluta atque perspiciatis molestiae expedita eveniet temporibus ipsam, earum et.</p>
+                    <a href="#" class="btn btn-primary">
+                      Ver mas...
+                    </a>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <div class="icon-square bg-light text-dark flex-shrink-0 me-3"></div><div>
+                    <h2>Venta de insumos</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur debitis vero magni, deleniti ratione quidem labore reprehenderit facere ea aspernatur! Laborum tempore quaerat, numquam fugiat sapiente in ipsum perferendis doloremque.</p>
+                    <a href="../pages/tienda.html" class="btn btn-primary">
+                      Ver mas...
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
     </main>
+
     <footer>
         <p>Autor: Emiliano Galmarini</p>
         <p>Alumno de Coderhouse - Comision 38180.</p>
         <p><a href="mailto:emiliano.galmarini@gmail.com">emiliano.galmarini@gmail.com</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
 </html>
