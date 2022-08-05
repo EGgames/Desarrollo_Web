@@ -10,39 +10,74 @@
     <title>Contacto</title>
 </head>
 <body >
-    <header >
-        <img src="/Images/background.png" alt="Wolf logo">
-    </header>
-    <nav class="animate__animated animate__backInLeft">
-        <ul>
-            <li id="menus"><a id="menus" href="../index.html">HOME</a></li>
-            <li id="menus"><a id="menus"  href="tienda.html" >TIENDA</a></li>
-            <li id="menus"><a id="menus" href="quienes_somos.html">QUIENES SOMOS</a></li>
-            <li id="menus"><a id="menus" href="contacto.html">CONTACTO</a></li>
-            <li id="menus"><a id="menus" href="ingreso.html">Ingresar</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Wolf Informatica</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+              <a class="nav-link" href="/pages/quienes_somos.html">Quienes somos</a>
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="/pages/ingreso.html">Ingresar</a>
+              <a class="nav-link disabled">Registrarse</a>
+
+            </div>
+          </div>
+        </div>
     </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Images/background.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/background.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <main>
-        <h2>Contacto</h2>
-        <div>
-            <form action="" method="" id="contact_form" class="animate__animated animate__bounceIn">
-    
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" placeholder="ingrese su apellido">
-                <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="ingrese su Email">
-                <label for="consulta">Consulta:</label>
-                <textarea name="" id="consulta" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar consulta">
-                <input type="reset" value="Reiniciar formulario">
-    </form>
-        </div>   
+      
+        <div class="container">
+
+            <h2>Formulario</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label  for="email"><h6>Email:</h6></label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese Email" name="email">
+                    <label  for="name"><h6>Nombre:</h6></label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre" name="name">
+                    <label  for="lastname"><h6>Apellido:</h6></label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese Apellido" name="lastname">
+                    <label  for="cellphone"><h6>Celular:</h6></label>
+                    <input type="number" class="form-control" id="celular" placeholder="Ingrese su número de celular" name="cellphone">
+                    <label  for="consulta"><h6>Consulta:</h6></label>
+                    <input type="text" class="form-control" id="consulta" placeholder="Ingrese Consulta" name="question">
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+        
+
+
     </main>
     <footer>
         <p>Autor: Emiliano Galmarini</p>
         <p>Alumno de Coderhouse - Comision 38180.</p>
         <p><a href="mailto:emiliano.galmarini@gmail.com">emiliano.galmarini@gmail.com</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

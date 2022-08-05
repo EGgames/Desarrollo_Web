@@ -77,7 +77,10 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 50px;
 top: 0;
 }
-
+h6{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+}
 h2{
     font-size:50px;
     color:rgb(255, 255, 255);
